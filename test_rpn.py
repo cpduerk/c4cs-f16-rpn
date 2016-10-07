@@ -14,7 +14,7 @@ class TestBasics(unittest.TestCase):
 			rpn.calculate("1 2 3 +")
 	def test_mult(self):
 		result = rpn.calculate("4 4 *")
-		self.assetEqual(16, result)
+		self.assertEqual(16, result)
 	def test_divide(self):
 		result = rpn.calculate("8 4 /")
 		self.assertEqual(2, result)
